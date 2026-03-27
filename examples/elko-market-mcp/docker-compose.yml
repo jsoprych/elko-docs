@@ -1,0 +1,19 @@
+services:
+  elko-market:
+    image: jsoprych/elko-market-mcp:latest
+    container_name: elko-market
+    ports:
+      - "8082:8082"
+    volumes:
+      - elko-market-data:/data
+    restart: unless-stopped
+    environment:
+      # Optional — lifts FRED daily request cap
+      - FRED_API_KEY=${FRED_API_KEY:-}
+      # Optional — recommended for SEC EDGAR courtesy
+      - SEC_USER_AGENT=${SEC_USER_AGENT:-}
+      # Optional — lifts BLS daily cap from 25 to 500
+      - BLS_API_KEY=${BLS_API_KEY:-}
+
+volumes:
+  elko-market-data:

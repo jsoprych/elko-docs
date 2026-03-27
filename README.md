@@ -1,0 +1,80 @@
+# elko-docs
+
+Documentation, examples, and assets for the **Elko.AI** MCP server ecosystem.
+
+---
+
+## Servers
+
+| Server | Port | Docker Hub | Description |
+|--------|------|-----------|-------------|
+| [elko-news-mcp](elko-news-mcp/README.md) | 8081 | `jsoprych/elko-news-mcp` | RSS/Atom news daemon — headlines, search, SQL procedures |
+| [elko-market-mcp](elko-market-mcp/README.md) | 8082 | `jsoprych/elko-market-mcp` | 13 financial data tools — Yahoo, EDGAR, Treasury, FRED, BLS, FDIC, World Bank |
+
+---
+
+## Quick Start — Both Servers
+
+```bash
+docker compose -f examples/docker-compose.full.yml up -d
+```
+
+Connect to Claude:
+```bash
+cat > .mcp.json << 'EOF'
+{
+  "mcpServers": {
+    "elko-news":   { "url": "http://localhost:8081/mcp" },
+    "elko-market": { "url": "http://localhost:8082/mcp" }
+  }
+}
+EOF
+claude
+```
+
+---
+
+## Contents
+
+```
+elko-market-mcp/        ← Full documentation
+  getting-started.md
+  tools/                ← Per-tool reference (Yahoo, EDGAR, Treasury, BLS, FDIC, FRED, World Bank)
+  dashboard.md
+  mcp-setup.md
+  api.md
+  docker.md
+
+elko-news-mcp/          ← Full documentation
+  getting-started.md
+  feeds.md
+  procedures.md         ← SQL procedures as MCP tools
+  dashboard.md
+  mcp-setup.md
+  api.md
+  docker.md
+
+advanced/
+  running-both.md       ← Docker Compose for both servers
+  claude-integration.md ← Claude Code / Desktop / Cursor setup
+  pro-keys.md           ← Key lifecycle and rotation
+  procedures-cookbook.md← 15+ ready-to-use SQL procedures
+
+examples/
+  docker-compose.full.yml          ← Both servers
+  elko-market-mcp/
+    docker-compose.yml
+    python/             ← yahoo_quote.py, treasury_yields.py, edgar_financials.py
+    curl/               ← examples.sh
+  elko-news-mcp/
+    docker-compose.yml
+    python/             ← headlines.py, save_procedure.py
+
+assets/                 ← Screenshots for Docker Hub READMEs
+  elko-market-mcp/
+  elko-news-mcp/
+```
+
+---
+
+*[elko.ai](https://elko.ai) · Built by [DARKFABRIK.AI](https://elko.ai)*

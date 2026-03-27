@@ -1,0 +1,12 @@
+services:
+  elko-news:
+    image: jsoprych/elko-news-mcp:latest
+    container_name: elko-news
+    ports:
+      - "8081:8081"
+    volumes:
+      - elko-news-data:/data
+    restart: unless-stopped
+
+volumes:
+  elko-news-data:
