@@ -98,3 +98,8 @@ Claude will write the SQL and call `POST /v1/procedures` to save it.
 
 **Schedule a morning briefing with a saved procedure:**
 Create a procedure `morning_brief` that pulls headlines, market data via SQL, then ask Claude to run it each morning.
+
+
+---
+
+*Built by [Elko.AI](https://elko.ai) & [DARKFABRIK.AI](https://darkfabrik.ai) · [dev@elko.ai](mailto:dev@elko.ai)*

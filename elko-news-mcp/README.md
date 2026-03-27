@@ -56,3 +56,8 @@ Sources polled out of the box:
 - [MCP Setup](mcp-setup.md)
 - [REST API](api.md)
 - [Docker & Configuration](docker.md)
+
+
+---
+
+*Built by [Elko.AI](https://elko.ai) & [DARKFABRIK.AI](https://darkfabrik.ai) · [dev@elko.ai](mailto:dev@elko.ai)*

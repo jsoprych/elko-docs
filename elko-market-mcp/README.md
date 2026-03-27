@@ -47,3 +47,8 @@ Open **http://localhost:8082** — the dashboard loads immediately with all 13 t
 - [MCP Setup](mcp-setup.md)
 - [REST API](api.md)
 - [Docker & Configuration](docker.md)
+
+
+---
+
+*Built by [Elko.AI](https://elko.ai) & [DARKFABRIK.AI](https://darkfabrik.ai) · [dev@elko.ai](mailto:dev@elko.ai)*

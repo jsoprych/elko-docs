@@ -128,3 +128,8 @@ date        amount
 2023-05-12  0.2400
 ...
 ```
+
+
+---
+
+*Built by [Elko.AI](https://elko.ai) & [DARKFABRIK.AI](https://darkfabrik.ai) · [dev@elko.ai](mailto:dev@elko.ai)*

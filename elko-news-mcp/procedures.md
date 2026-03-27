@@ -155,3 +155,8 @@ With elko-news connected to Claude, you can ask:
 > *"Create a SQL procedure called `crypto_news_2h` that returns crypto news from the last 2 hours, ordered by most recent."*
 
 Claude will write the SQL, call the `/v1/procedures` API, and save it — callable immediately.
+
+
+---
+
+*Built by [Elko.AI](https://elko.ai) & [DARKFABRIK.AI](https://darkfabrik.ai) · [dev@elko.ai](mailto:dev@elko.ai)*

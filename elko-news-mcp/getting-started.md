@@ -68,3 +68,8 @@ LIMIT 20
 Save as `earnings_news_1h` — now callable via MCP as `tools/call { "name": "earnings_news_1h" }`.
 
 → [Procedures guide](procedures.md)
+
+
+---
+
+*Built by [Elko.AI](https://elko.ai) & [DARKFABRIK.AI](https://darkfabrik.ai) · [dev@elko.ai](mailto:dev@elko.ai)*

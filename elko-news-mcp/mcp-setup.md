@@ -105,3 +105,8 @@ Then ask Claude:
 > *"What's in the news about Apple, and what does their stock look like right now?"*
 
 → [Running both servers](../advanced/running-both.md)
+
+
+---
+
+*Built by [Elko.AI](https://elko.ai) & [DARKFABRIK.AI](https://darkfabrik.ai) · [dev@elko.ai](mailto:dev@elko.ai)*

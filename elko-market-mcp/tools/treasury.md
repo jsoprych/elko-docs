@@ -66,3 +66,8 @@ The dashboard renders historical data as a line chart. Great for visualizing yie
 > *"Is the yield curve currently inverted?"*
 > *"Show me the 10-year yield trend for the past year."*
 > *"Compare the 2-year and 10-year yields over the last 6 months."*
+
+
+---
+
+*Built by [Elko.AI](https://elko.ai) & [DARKFABRIK.AI](https://darkfabrik.ai) · [dev@elko.ai](mailto:dev@elko.ai)*

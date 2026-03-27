@@ -189,3 +189,8 @@ FROM (
 GROUP BY keyword
 ORDER BY mentions DESC
 ```
+
+
+---
+
+*Built by [Elko.AI](https://elko.ai) & [DARKFABRIK.AI](https://darkfabrik.ai) · [dev@elko.ai](mailto:dev@elko.ai)*

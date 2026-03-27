@@ -68,3 +68,8 @@ When the easy key expires:
 - Public routes (`/health`, `/mcp.json`, `/v1/key-status`) remain accessible
 
 To recover: pull a new image (which has a fresh key) or set `ELKO_EASY_KEY` to a new key.
+
+
+---
+
+*Built by [Elko.AI](https://elko.ai) & [DARKFABRIK.AI](https://darkfabrik.ai) · [dev@elko.ai](mailto:dev@elko.ai)*

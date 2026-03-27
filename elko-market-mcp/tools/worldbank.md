@@ -79,3 +79,8 @@ year  value
 > *"Compare GDP growth rates for the US, EU, and China over the last decade."*
 > *"Which G20 country has the highest debt-to-GDP ratio?"*
 > *"Show me inflation trends across emerging markets since 2020."*
+
+
+---
+
+*Built by [Elko.AI](https://elko.ai) & [DARKFABRIK.AI](https://darkfabrik.ai) · [dev@elko.ai](mailto:dev@elko.ai)*

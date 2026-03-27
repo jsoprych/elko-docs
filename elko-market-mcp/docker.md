@@ -112,3 +112,8 @@ docker run -d --name elko-market \
   -v elko-market-data:/data \
   ghcr.io/jsoprych/elko-market-mcp:latest
 ```
+
+
+---
+
+*Built by [Elko.AI](https://elko.ai) & [DARKFABRIK.AI](https://darkfabrik.ai) · [dev@elko.ai](mailto:dev@elko.ai)*

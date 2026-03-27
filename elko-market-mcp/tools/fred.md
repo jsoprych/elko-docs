@@ -105,3 +105,8 @@ PERMIT       New Private Housing Units Authorized           Monthly    Thousands
 ```
 
 Use the `id` from search results with `fred_series` to fetch the actual data.
+
+
+---
+
+*Built by [Elko.AI](https://elko.ai) & [DARKFABRIK.AI](https://darkfabrik.ai) · [dev@elko.ai](mailto:dev@elko.ai)*

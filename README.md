@@ -77,4 +77,4 @@ assets/                 ← Screenshots for Docker Hub READMEs
 
 ---
 
-*[elko.ai](https://elko.ai) · Built by [DARKFABRIK.AI](https://elko.ai)*
+*Built by [Elko.AI](https://elko.ai) & [DARKFABRIK.AI](https://darkfabrik.ai) · [dev@elko.ai](mailto:dev@elko.ai)*

@@ -74,3 +74,8 @@ year  period  value   footnotes
 > *"What's the current unemployment rate trend?"*
 > *"Show me CPI month-over-month changes since 2022."*
 > *"How many jobs were added last month?"*
+
+
+---
+
+*Built by [Elko.AI](https://elko.ai) & [DARKFABRIK.AI](https://darkfabrik.ai) · [dev@elko.ai](mailto:dev@elko.ai)*

@@ -15,3 +15,8 @@
 | `worldbank_indicator` | [World Bank](worldbank.md) | World Bank | No |
 | `fred_series` | [FRED](fred.md) | St. Louis Fed | Optional (`FRED_API_KEY`) |
 | `fred_search` | [FRED](fred.md) | St. Louis Fed | Optional |
+
+
+---
+
+*Built by [Elko.AI](https://elko.ai) & [DARKFABRIK.AI](https://darkfabrik.ai) · [dev@elko.ai](mailto:dev@elko.ai)*

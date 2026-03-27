@@ -58,4 +58,4 @@ curl -s localhost:8082/mcp.json > elko-market.mcp.json
 
 ---
 
-*Built by [DARKFABRIK.AI](https://elko.ai)*
+*Built by [Elko.AI](https://elko.ai) & [DARKFABRIK.AI](https://darkfabrik.ai) · [dev@elko.ai](mailto:dev@elko.ai)*

@@ -96,3 +96,8 @@ The `--sources` flag accepts `all` (default) or a comma-separated list of source
 | Crypto | `https://cointelegraph.com/rss` |
 | Sports | `https://www.espn.com/espn/rss/news` |
 | General | `https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml` |
+
+
+---
+
+*Built by [Elko.AI](https://elko.ai) & [DARKFABRIK.AI](https://darkfabrik.ai) · [dev@elko.ai](mailto:dev@elko.ai)*

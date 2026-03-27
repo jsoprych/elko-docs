@@ -90,3 +90,8 @@ With both servers connected, Claude can combine news and market data in a single
 > *"Search for earnings news and then pull AAPL's last quarter income statement."*
 
 > *"Give me a market briefing — top headlines, current yields, and S&P 500 status."*
+
+
+---
+
+*Built by [Elko.AI](https://elko.ai) & [DARKFABRIK.AI](https://darkfabrik.ai) · [dev@elko.ai](mailto:dev@elko.ai)*

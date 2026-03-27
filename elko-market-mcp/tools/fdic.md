@@ -89,3 +89,8 @@ tier1_capital     11.9%       11.8%       11.6%       11.4%
 > *"Which community banks in North Carolina have the highest ROE?"*
 > *"Compare JPMorgan and Wells Fargo's capital ratios."*
 > *"Show me SVB's financials for the 4 quarters before it failed."*
+
+
+---
+
+*Built by [Elko.AI](https://elko.ai) & [DARKFABRIK.AI](https://darkfabrik.ai) · [dev@elko.ai](mailto:dev@elko.ai)*
