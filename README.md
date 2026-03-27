@@ -8,6 +8,7 @@ Documentation, examples, and assets for the **Elko.AI** MCP server ecosystem.
 
 | Server | Port | Docker Hub | Description |
 |--------|------|-----------|-------------|
+| [elko-project-wizard](elko-project-wizard/README.md) | 8080 | [jsoprych/elko-project-wizard](https://hub.docker.com/r/jsoprych/elko-project-wizard) | AI project scaffolder — 26 directives, 8 stacks, generates AGENTS.md + CLAUDE.md + Dockerfile |
 | [elko-news-mcp](elko-news-mcp/README.md) | 8081 | [jsoprych/elko-news-mcp](https://hub.docker.com/r/jsoprych/elko-news-mcp) | RSS/Atom news daemon — headlines, search, SQL procedures |
 | [elko-market-mcp](elko-market-mcp/README.md) | 8082 | [jsoprych/elko-market-mcp](https://hub.docker.com/r/jsoprych/elko-market-mcp) | 13 financial data tools — Yahoo, EDGAR, Treasury, FRED, BLS, FDIC, World Bank |
 

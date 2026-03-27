@@ -1,12 +1,23 @@
 # Elko.AI — Documentation
 
-**Elko** is a suite of self-hosted MCP (Model Context Protocol) servers that connect your AI assistant to real-world data — no API keys required for core features, no cloud dependency, no usage caps.
-
-Run them locally or in Docker. Connect Claude, Cursor, or any MCP-compatible client. Ask questions in plain English and get live data back.
+**Elko** is a suite of self-hosted tools and MCP (Model Context Protocol) servers — run locally or in Docker, connect to Claude or any MCP-compatible client, and get live data back in plain English.
 
 ---
 
-## Servers
+## Tools
+
+### [elko-project-wizard](elko-project-wizard/README.md) — AI Project Scaffolder
+Port `8080` · 🐳 [Docker Hub](https://hub.docker.com/r/jsoprych/elko-project-wizard) · `docker pull jsoprych/elko-project-wizard:latest`
+
+Stop briefing your AI agent from a blank page. Pick directives, compose a profile, hit Generate — get a `.zip` with `AGENTS.md`, `CLAUDE.md`, `Dockerfile`, and more in under 60 seconds.
+
+26 built-in directives · 11 categories · 8 tech stacks · Quick Start Wizard included
+
+→ [Getting Started](elko-project-wizard/getting-started.md) · [Directives](elko-project-wizard/directives.md) · [Profiles](elko-project-wizard/profiles.md) · [Dashboard](elko-project-wizard/dashboard.md) · [API](elko-project-wizard/api.md) · [Docker](elko-project-wizard/docker.md)
+
+---
+
+## MCP Servers
 
 ### [elko-market-mcp](elko-market-mcp/README.md) — Financial Market Data
 Port `8082` · 🐳 [Docker Hub](https://hub.docker.com/r/jsoprych/elko-market-mcp) · `docker pull jsoprych/elko-market-mcp:latest`
