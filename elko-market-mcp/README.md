@@ -4,11 +4,14 @@ A self-hosted financial data server exposing **13 free market data tools** via M
 
 ![elko-market dashboard](https://raw.githubusercontent.com/jsoprych/elko-docs/main/assets/elko-market-mcp/01-tools-chart.png)
 
+🐳 **[Docker Hub → hub.docker.com/r/jsoprych/elko-market-mcp](https://hub.docker.com/r/jsoprych/elko-market-mcp)**
+
 ---
 
 ## Quick Start
 
 ```bash
+docker pull jsoprych/elko-market-mcp:latest
 docker run -d --name elko-market \
   -p 8082:8082 \
   -v elko-market-data:/data \

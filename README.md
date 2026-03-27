@@ -8,14 +8,16 @@ Documentation, examples, and assets for the **Elko.AI** MCP server ecosystem.
 
 | Server | Port | Docker Hub | Description |
 |--------|------|-----------|-------------|
-| [elko-news-mcp](elko-news-mcp/README.md) | 8081 | `jsoprych/elko-news-mcp` | RSS/Atom news daemon — headlines, search, SQL procedures |
-| [elko-market-mcp](elko-market-mcp/README.md) | 8082 | `jsoprych/elko-market-mcp` | 13 financial data tools — Yahoo, EDGAR, Treasury, FRED, BLS, FDIC, World Bank |
+| [elko-news-mcp](elko-news-mcp/README.md) | 8081 | [jsoprych/elko-news-mcp](https://hub.docker.com/r/jsoprych/elko-news-mcp) | RSS/Atom news daemon — headlines, search, SQL procedures |
+| [elko-market-mcp](elko-market-mcp/README.md) | 8082 | [jsoprych/elko-market-mcp](https://hub.docker.com/r/jsoprych/elko-market-mcp) | 13 financial data tools — Yahoo, EDGAR, Treasury, FRED, BLS, FDIC, World Bank |
 
 ---
 
 ## Quick Start — Both Servers
 
 ```bash
+docker pull jsoprych/elko-news-mcp:latest
+docker pull jsoprych/elko-market-mcp:latest
 docker compose -f examples/docker-compose.full.yml up -d
 ```
 

@@ -4,11 +4,14 @@ A self-hosted news daemon that continuously polls RSS/Atom feeds, stores article
 
 ![elko-news dashboard — Procedures pane](https://raw.githubusercontent.com/jsoprych/elko-docs/main/assets/elko-news-mcp/02-procedures.png)
 
+🐳 **[Docker Hub → hub.docker.com/r/jsoprych/elko-news-mcp](https://hub.docker.com/r/jsoprych/elko-news-mcp)**
+
 ---
 
 ## Quick Start
 
 ```bash
+docker pull jsoprych/elko-news-mcp:latest
 docker run -d --name elko-news \
   -p 8081:8081 \
   -v elko-news-data:/data \

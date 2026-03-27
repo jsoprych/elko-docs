@@ -9,7 +9,7 @@ Run them locally or in Docker. Connect Claude, Cursor, or any MCP-compatible cli
 ## Servers
 
 ### [elko-market-mcp](elko-market-mcp/README.md) — Financial Market Data
-Port `8082` · Docker: `jsoprych/elko-market-mcp:latest`
+Port `8082` · 🐳 [Docker Hub](https://hub.docker.com/r/jsoprych/elko-market-mcp) · `docker pull jsoprych/elko-market-mcp:latest`
 
 13 tools covering equities, bonds, macro, banking, and economic data:
 Yahoo Finance · SEC EDGAR · U.S. Treasury · BLS · FDIC · World Bank · FRED
@@ -19,7 +19,7 @@ Yahoo Finance · SEC EDGAR · U.S. Treasury · BLS · FDIC · World Bank · FRED
 ---
 
 ### [elko-news-mcp](elko-news-mcp/README.md) — News & RSS Feeds
-Port `8081` · Docker: `jsoprych/elko-news-mcp:latest`
+Port `8081` · 🐳 [Docker Hub](https://hub.docker.com/r/jsoprych/elko-news-mcp) · `docker pull jsoprych/elko-news-mcp:latest`
 
 Polls RSS/Atom feeds continuously. Full-text search. SQL procedures auto-registered as MCP tools. Sources include Reuters, AP, Bloomberg, BBC, Hacker News, and more.
 
