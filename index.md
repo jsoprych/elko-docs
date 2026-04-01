@@ -1,6 +1,19 @@
 # Elko.AI — Documentation
 
-**Elko** is a suite of self-hosted tools and MCP (Model Context Protocol) servers — run locally or in Docker, connect to Claude or any MCP-compatible client, and get live data back in plain English.
+**Elko** is a suite of self-hosted tools, visual editors, and MCP (Model Context Protocol) servers — run locally or in Docker, connect to Claude or any MCP-compatible client, and get live data back in plain English.
+
+---
+
+## Studio
+
+### [Transita](transita/README.md) — Visual Diagram Editor
+🌐 [elko.ai/transita](https://elko.ai/transita) · Alpha preview
+
+Visual editor for flowcharts, state machines, and workflow diagrams. Drag-and-drop nodes, connect them, group related steps, and read an instant pseudocode summary of any flow.
+
+8 node types · Business Process template · Live pseudocode · Undo/Redo · Grouping
+
+→ [Getting Started](transita/getting-started.md) · [Node Types](transita/node-types.md)
 
 ---
 

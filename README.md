@@ -1,6 +1,14 @@
 # elko-docs
 
-Documentation, examples, and assets for the **Elko.AI** MCP server ecosystem.
+Documentation for the **Elko.AI** suite of tools, visual editors, and MCP servers.
+
+---
+
+## Studio
+
+| App | URL | Description |
+|-----|-----|-------------|
+| [Transita](transita/README.md) | [elko.ai/transita](https://elko.ai/transita) | Visual diagram editor — flowcharts, state machines, business workflows |
 
 ---
 
@@ -40,6 +48,10 @@ claude
 ## Contents
 
 ```
+transita/               ← Visual diagram editor
+  getting-started.md
+  node-types.md         ← Business Process palette reference
+
 elko-market-mcp/        ← Full documentation
   getting-started.md
   tools/                ← Per-tool reference (Yahoo, EDGAR, Treasury, BLS, FDIC, FRED, World Bank)
