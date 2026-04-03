@@ -2,13 +2,44 @@
 
 The Quick Start Wizard is the fastest path from zero to a working AI-briefed project scaffold.
 
-![Quick Start Wizard](https://raw.githubusercontent.com/jsoprych/elko-docs/main/assets/elko-project-wizard/04-quick-start-wizard.png)
+The wizard is a **5-tab dialog** — work left to right. Each tab is locked until its prerequisites are complete. Clicking a locked tab shows a warning instead of navigating. Tabs show **✓** when done and can be clicked directly to jump back. A yellow **legal-pad checklist** in the sidebar mirrors your progress live.
 
 ---
 
-## Steps
+## Tab 1 — 📋 Your Project
 
-### Step 1 — Choose Your Tech Stack
+Enter the basics that go into your `AGENTS.md` header:
+
+| Field | Required | Notes |
+|-------|----------|-------|
+| **Project Name** | ✓ | Lowercase + hyphens — becomes the ZIP folder name |
+| **Your Name** | ✓ | Written into the AGENTS.md author line |
+| **Email** | optional | Also written into AGENTS.md |
+| **What Are You Building?** | optional | Functional description only — no tech stack or coding rules |
+
+The "What Are You Building?" field accepts plain English describing features, users, and business rules. Keep it functional — stack, coding standards, and agent rules are handled by the later tabs.
+
+Click **Next →** once a project name and author name are entered.
+
+---
+
+## Tab 2 — 🎓 Experience
+
+Tells the AI agent how to calibrate its explanations and communication style:
+
+| Level | Description |
+|-------|-------------|
+| **Zero** | Brand new to coding — plain English, step-by-step, no jargon. Go, Python, and Node.js get a ⭐ beginner-friendly badge. |
+| **Builder** | Know the basics — skip fundamentals, explain reasoning, show diffs |
+| **Hero** | Experienced developer — terse, diff-first, respect your decisions |
+
+Your selection also influences how the Tech Stack tab is presented (compact grid for Hero, highlighted beginner stacks for Zero).
+
+Click a level card to select it, then click **Next →**.
+
+---
+
+## Tab 3 — 🛠️ Tech Stack
 
 Pick the language and framework for your project:
 
@@ -23,29 +54,36 @@ Pick the language and framework for your project:
 | **C** | Embedded, OS-level, systems |
 | **C++** | Games, performance, graphics |
 
----
-
-### Step 2 — Your Coding Experience
-
-Tells the AI agent how to talk to you:
-
-| Level | Description |
-|-------|-------------|
-| **Zero — brand new to coding** | Plain English, step-by-step, celebrate wins, no jargon |
-| **Builder — know the basics** | Skip fundamentals, explain reasoning |
-| **Hero — experienced developer** | Terse, diff-first, respect your decisions |
+Click a stack card to select it, then click **Next →**.
 
 ---
 
-### Step 3 — Name Your Project
+## Tab 4 — ⚡ Generate
 
-Enter a project name (e.g. `my-api`, `hello-world`). This becomes the folder name inside the ZIP.
+Review the bundle — exactly what will be inside your ZIP:
+
+| File / Directive | Purpose |
+|-----------------|---------|
+| **AGENTS.md + CLAUDE.md** | AI agent context, stack-specific, includes author + project brief |
+| **Coding Experience directive** | Calibrates agent communication style |
+| **Dependency Check directive** | Agents verify tools before building |
+| **Hello World + SQLite directive** | Minimal starter with database |
+| **setup-1st.sh / setup-1st.bat** | Preflight scripts — run once before coding |
+| **GETTING_STARTED.md** | Install links + one-command run instructions (personalised greeting when name is set) |
+| **.gitignore** | Stack-appropriate ignores |
+
+Click **⬇ Generate & Download ZIP**. The `.zip` downloads automatically and the wizard advances to the **Bundle Preview** tab.
 
 ---
 
-### Step 4 — What's Included
+## Tab 5 — 📦 Bundle Preview
 
-Preview the files that will be generated based on your selections. Click **Generate** to download the ZIP.
+Unlocks after a successful generation. Shows a **✓ BUNDLE READY** badge and a file tree of everything inside the ZIP.
+
+- Click any file row to open a modal inspector
+- `.md` files (AGENTS.md, GETTING_STARTED.md, etc.) render as **formatted Markdown** by default — toggle to Raw to see the source
+- Modal footer has a **⬇ Download ZIP** button to re-download without regenerating
+- The **⬇ Download ZIP Again** nav button also re-downloads at any time
 
 ---
 
@@ -55,10 +93,28 @@ Preview the files that will be generated based on your selections. Click **Gener
 unzip my-project.zip
 cd my-project
 git init
-claude        # or: opencode, cursor, etc.
+claude        # or: opencode, cursor, zed, etc.
 ```
 
-Your AI agent reads `AGENTS.md` automatically and is fully briefed on your stack, rules, and experience level.
+Your AI agent reads `AGENTS.md` automatically (via `CLAUDE.md → @AGENTS.md`) and is fully briefed on your stack, rules, and experience level before writing a single line.
+
+---
+
+## Navigation
+
+- Click any **unlocked** tab header to jump directly to it
+- Clicking a **locked** tab shows a warning — complete the earlier steps first
+- **← Back** moves one step left (visible on all steps including Bundle Preview)
+- **Next →** / **Generate** is disabled until the current step's requirements are satisfied
+- The sidebar legal pad shows live ✓ / ! / → status for each step
+
+---
+
+## No LLM Required
+
+The default community build runs entirely without an AI API key. All generation is template-based — directives are static JSON, the generator fills Go templates. No outbound calls, no tokens spent.
+
+AI Assist (custom directive generation) works in **sandwich mode** without a key — returns a prompt you paste into any AI chat. Set `ANTHROPIC_API_KEY` or `DEEPSEEK_API_KEY` for fully automated generation (home-lab build).
 
 ---
 
