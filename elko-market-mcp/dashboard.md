@@ -20,13 +20,24 @@ Auto-generated forms for all 13 tools — built from each tool's JSON Schema.
 - **JSON-RPC tab** — ready-to-copy `curl` and Python snippets for the exact call you just made
 - **History** — last 50 results per tool, exportable as TXT / CSV / JSON
 
+### Procedures
+
+SQL procedures saved via `POST /v1/procedures` appear under a **Procedures** group in the
+sidebar. They behave exactly like regular tools — auto-generated form, result panel, MCP JSON
+tab, export.
+
 ### Logs
 
-Recent call log: tool name, arguments, result (truncated), and duration. Useful for debugging and auditing.
+Recent call log: tool name, arguments, result (truncated), and duration. Visible only when the
+server is started with `--db`. Useful for debugging and auditing.
 
-### Status
+### Status Bar
 
-Health card, key info (easy key expiry, rate limits), and per-source request counts.
+The status bar at the bottom shows easy-key expiry and rate-limit usage.
+
+**🔑 Keys button** — opens the API key management panel. Use this to set `FRED_API_KEY`,
+`BLS_API_KEY`, or `SEC_USER_AGENT` without restarting the container. The button shows a
+warning badge when a required key (FRED) is not set.
 
 ---
 
@@ -44,13 +55,16 @@ Click the **◑ Normal** button (top-right) to cycle themes:
 
 ## Tool Categories
 
-| Category | Tools |
-|----------|-------|
-| **Equity** | `yahoo_quote`, `yahoo_history`, `yahoo_dividends` |
-| **Filings** | `edgar_financials`, `edgar_company_info`, `edgar_insider_trades` |
-| **Rates** | `treasury_yields` |
-| **Macro** | `bls_series`, `worldbank_indicator`, `fred_series`, `fred_search` |
-| **Banking** | `fdic_bank_search`, `fdic_bank_financials` |
+| Source | Category | Tools |
+|--------|----------|-------|
+| Yahoo Finance | Equity | `yahoo_quote`, `yahoo_history`, `yahoo_dividends` |
+| SEC EDGAR | Equity | `edgar_financials`, `edgar_company_info`, `edgar_insider_trades` |
+| Treasury | Rates | `treasury_yields` |
+| BLS | Macro | `bls_series` |
+| World Bank | Macro | `worldbank_indicator` |
+| FRED | Macro | `fred_series`, `fred_search` |
+| FDIC | Banking | `fdic_bank_search`, `fdic_bank_financials` |
+| — | SQL | Saved procedures (user-defined, appear after `POST /v1/procedures`) |
 
 → [Full tool reference](tools/)
 

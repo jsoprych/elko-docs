@@ -69,15 +69,22 @@ Once connected, you can ask in plain English:
 
 ---
 
-## 5. Optional API Keys
+## 5. API Keys
 
-Most tools work without keys. Some have rate limits that keys lift:
+Most tools work without any key. FRED tools require a free key; BLS and SEC keys are optional upgrades.
 
-| Key | Tool | Where to get |
-|-----|------|-------------|
-| `FRED_API_KEY` | `fred_series`, `fred_search` | [fred.stlouisfed.org/docs/api](https://fred.stlouisfed.org/docs/api/api_key.html) — free |
-| `BLS_API_KEY` | `bls_series` | [data.bls.gov](https://data.bls.gov/registrationEngine/) — free |
-| `SEC_USER_AGENT` | `edgar_*` | Your name + email — recommended, not a key |
+| Key | Tools | Required? | Where to get |
+|-----|-------|-----------|-------------|
+| `FRED_API_KEY` | `fred_series`, `fred_search` | **Yes** | [fred.stlouisfed.org/docs/api](https://fred.stlouisfed.org/docs/api/api_key.html) — free |
+| `BLS_API_KEY` | `bls_series` | No | [data.bls.gov](https://data.bls.gov/registrationEngine/) — lifts cap 25 → 500/day |
+| `SEC_USER_AGENT` | `edgar_*` | No | Your name + email — recommended for polite crawling |
+
+**Option A — Set from the dashboard (easiest, no restart needed):**
+
+Click the 🔑 **Keys** button in the status bar at the bottom of the dashboard.
+Paste your key and click **Save** — it takes effect immediately and persists to the data volume.
+
+**Option B — Pass at container startup:**
 
 ```bash
 docker run -d --name elko-market \
