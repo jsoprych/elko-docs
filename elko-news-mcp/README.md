@@ -35,18 +35,19 @@ Open **http://localhost:8081** — articles start appearing within 30 seconds.
 
 ## Feeds
 
-Sources polled out of the box:
+67 sources polled out of the box across five categories:
 
-| Source | Category | Interval |
-|--------|----------|----------|
-| Reuters Top News | general | 15m |
-| Reuters Business | business | 15m |
-| Associated Press | general | 15m |
-| Hacker News | technology | 30m |
-| Wall Street Journal Markets | markets | 15m |
-| MarketWatch Headlines | markets | 15m |
+| Category | Sources (sample) |
+|----------|-----------------|
+| **News & World** | Reuters, AP, BBC, Guardian, Al Jazeera, France 24, DW, NHK, SCMP, Straits Times, CBC, and more |
+| **Finance & Markets** | Bloomberg, WSJ, FT, MarketWatch, The Economist |
+| **Technology** | TechCrunch, The Verge, Ars Technica, Wired, MIT Tech Review, VentureBeat, Hugging Face Blog |
+| **Science & AI** | arXiv (cs.AI, cs.CL, cs.CV, cs.LG, cs.RO, stat.ML), Tech Xplore, ScienceDaily, Nature |
+| **Opinion & Politics** | Politico, Foreign Policy |
 
-→ [Full feeds guide](feeds.md) — adding custom feeds, intervals, headers
+Each feed carries editorial metadata: owner, lean, country — queryable as filters.
+
+→ [Full feeds guide](feeds.md) — feed format, ownership metadata, adding custom feeds
 
 ---
 

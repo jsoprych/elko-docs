@@ -9,11 +9,7 @@ No login required — open it in any browser.
 
 ### Headlines
 
-Live article feed. Filter by source, category, or time window. Click any headline to open the original article.
-
-### Search
-
-Full-text search across article titles and summaries (SQLite FTS5). Results update as you type.
+Live article feed. Search bar and filter controls (source, category, lean, country, time window). Click any headline to open the original article. **Fetch All** button triggers an immediate server-side poll of every feed. Export dropdown downloads results as JSON, CSV, or Markdown.
 
 ### Procedures
 
@@ -23,7 +19,7 @@ Saved SQL procedures — each one is automatically exposed as an MCP tool your A
 
 - **Name** — the MCP tool name (e.g. `fed_news_today`)
 - **Description** — shown to the AI as the tool description
-- **SQL** — a `SELECT` query; use `{{param}}` placeholders for runtime substitution
+- **SQL** — a `SELECT` query against the articles table
 - **JSON-RPC tab** — ready-to-copy `curl` and Python snippets for each procedure
 
 **Create a procedure:**
@@ -31,34 +27,39 @@ Saved SQL procedures — each one is automatically exposed as an MCP tool your A
 2. Enter a name, description, and SELECT query
 3. Click **Save** — it immediately appears as an MCP tool
 
+Three starter procedures are seeded on first run: `fed_news_today`, `tech_headlines`, `market_movers`.
+
 ### Sources
 
-Article counts per feed source. Shows which sources are active and how many articles each has contributed.
+Publication ownership table — name, owner, type, HQ country, stock ticker (if public), editorial lean, and article count. Click **Enrich** on any source to fetch live metadata from Wikidata.
+
+### MCP Playground
+
+Interactive tool tester. Pick a tool, fill in parameters, click **Call**, and see the raw MCP result alongside the ready-to-copy `curl` snippet.
 
 ### Status
 
-Health card, key info (easy key expiry, rate limits), and feed poll status.
+Health card (articles, sources, version), easy-key expiry and rate-limit usage, lean distribution chart, and per-source article counts.
+
+---
+
+## API Keys
+
+Click the 🔑 **Keys** button in the status bar to open the key management panel.
+No keys are required for elko-news-mcp — this panel is available for future
+feed sources that require authentication headers.
 
 ---
 
 ## Theme Toggle
 
-Click the **◑ Normal** button (top-right) to cycle themes:
+Click the theme button (top of sidebar) to cycle:
 
 | Mode | Description |
 |------|-------------|
 | Light | Default white background |
 | Dark | Dark charcoal background |
-| High-contrast | Pure black-on-white, `#0000cc` accent — maximum readability |
-
----
-
-## Export
-
-From the Headlines pane, use the **Export** dropdown to download articles as:
-- `JSON` — full structured data
-- `CSV` — spreadsheet-friendly
-- `Markdown` — paste into notes or docs
+| High-contrast | Pure black-on-white, `#0000cc` accent |
 
 ---
 
